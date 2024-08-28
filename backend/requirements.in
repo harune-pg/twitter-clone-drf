@@ -2,6 +2,9 @@ Django==4.2.*
 djangorestframework
 django-environ
 psycopg2-binary
+dj-rest-auth
 djangorestframework-simplejwt
-djoser
+drf_spectacular
+factory_boy
+coverage
 django-cors-headers
