@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { getUser } from './api/api';
+import React, { useEffect } from "react";
+import { getUser } from "./api/api";
 
 function App() {
   useEffect(() => {
@@ -9,7 +9,7 @@ function App() {
     };
     // 現時点では401エラーが返ってくる
     fetchData();
-    });
+  });
 
   return (
     <div>
