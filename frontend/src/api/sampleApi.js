@@ -1,9 +1,9 @@
 import axios from "axios";
 
-async function getUser() {
+const getUser = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:8000/api/auth/users/me/",
+      "http://localhost:8000/api/accounts/user/",
     );
     console.log(response);
   } catch (e) {

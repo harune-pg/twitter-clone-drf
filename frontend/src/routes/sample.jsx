@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { getUser } from "./api/api";
+import { getUser } from "../api/sampleApi";
 
-function App() {
+const Sample = () => {
   useEffect(() => {
     // ページがマウントされた時にgetUser関数を呼び出す
     const fetchData = async () => {
@@ -13,9 +13,9 @@ function App() {
 
   return (
     <div>
-      <p>App</p>
+      <p>Sample</p>
     </div>
   );
 }
 
-export default App;
+export default Sample;
