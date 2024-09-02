@@ -7,3 +7,4 @@ djangorestframework-simplejwt
 drf_spectacular
 factory_boy
 coverage
+django-cors-headers
