@@ -6,14 +6,13 @@ from django.core import exceptions as django_exceptions
 
 User = get_user_model()
 
-# 参考: djoser
 class UserCreateSerializer(serializers.ModelSerializer):
     password = serializers.CharField(style={"input_type": "password"}, write_only=True)
     re_password = serializers.CharField(style={"input_type": "password"}, write_only=True)
 
     class Meta:
         model = User
-        fields = ["username", "email", "password", "re_password"]
+        fields = ["username", "password", "re_password"]
 
     def validate(self, attrs):
         password = attrs.get("password")
